@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--background);
+}
+
+.app {
+    padding: 100px;
+}
+
+@import './colors.css'

@@ -1,0 +1,11 @@
+{
+  "name": "@mfp/root",
+  "private": true,
+  "scripts": {
+    "start": "lerna exec start",
+    "build": "lerna exec build"
+  },
+  "workspaces": [
+    "workspace/*"
+  ]
+}
