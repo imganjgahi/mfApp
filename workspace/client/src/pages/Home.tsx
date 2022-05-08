@@ -1,8 +1,11 @@
 import { Button, ConfigProvider } from 'antd'
 import React from 'react'
+import { Link } from 'react-router-dom'
+import appController from '../context/Controller'
 
 export function ClientHomePage() {
 
+  const controller = appController()
   const colors = {
     light: {
       fontColor: "#444444",
@@ -39,6 +42,10 @@ export function ClientHomePage() {
   return (
     <div className='homePage'>
       <h1>Home Page is Active!</h1>
+      <p> Conuter: {controller.counter} </p>
+      <Button onClick={() => controller.setCounter(controller.counter + 1)} >UP</Button>
+      <br />
+      <Link to={"/about"}>About</Link> <br />
       <Button type="primary" onClick={() => changeTheme(colors.light)}>Light</Button>
       <Button type="primary" onClick={() => changeTheme(colors.dark)}>Dark</Button>
     </div>
