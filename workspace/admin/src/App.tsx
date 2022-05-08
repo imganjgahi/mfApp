@@ -1,25 +1,25 @@
-import { Button, ConfigProvider } from "antd";
+import { ConfigProvider } from "antd";
+import 'antd/dist/antd.variable.min.css';
 import React from "react";
 import ReactDOM from "react-dom";
-import 'antd/dist/antd.variable.min.css';
+import Routes from "./pages/Routes";
+import "./styles/index.css";
 
-import "./index.css";
-
-const App = () => (
-  <div className="container">
-    <div>admin</div>
-    <Button type="primary"> Admin Button</Button>
+const App = () => {
+  return <div className="app">
+    <Routes />
   </div>
-);
+};
+
 const mount = (el) => {
   ReactDOM.render(
-  <ConfigProvider>
-  <App />
-  </ConfigProvider>, el);
+    <ConfigProvider>
+      <App />
+    </ConfigProvider>, el);
 }
 
-if(process.env.NODE_ENV === 'development') {
-  mount( document.getElementById("admin"))
+if (process.env.NODE_ENV === 'development') {
+  mount(document.getElementById("admin"))
 }
 
-export {mount}
+export { mount };

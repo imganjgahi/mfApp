@@ -1,9 +1,9 @@
-import { Button, ConfigProvider } from "antd";
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
+import { ConfigProvider } from "antd";
 import 'antd/dist/antd.variable.min.css';
-import "./styles/index.css";
+import React from "react";
+import ReactDOM from "react-dom";
 import Routes from "./pages/Routes";
+import "./styles/index.css";
 
 const App = () => {
   return <div className="app">
@@ -22,4 +22,4 @@ if (process.env.NODE_ENV === 'development') {
   mount(document.getElementById("client"))
 }
 
-export { mount }
+export { mount };

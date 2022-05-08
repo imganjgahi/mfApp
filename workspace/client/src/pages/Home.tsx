@@ -1,7 +1,7 @@
 import { Button, ConfigProvider } from 'antd'
 import React from 'react'
 
-function HomePage() {
+export function ClientHomePage() {
 
   const colors = {
     light: {
@@ -37,12 +37,10 @@ function HomePage() {
     document.documentElement.style.setProperty(`--primaryFontColor`, theme.primaryFontColor)
   }
   return (
-    <div>
-      <h1>Home Page Render f!</h1>
+    <div className='homePage'>
+      <h1>Home Page is Active!</h1>
       <Button type="primary" onClick={() => changeTheme(colors.light)}>Light</Button>
       <Button type="primary" onClick={() => changeTheme(colors.dark)}>Dark</Button>
     </div>
   )
 }
-
-export default HomePage

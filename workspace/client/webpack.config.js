@@ -53,7 +53,9 @@ module.exports = {
       name: "client",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./ClientHomePage": "./src/pages/Home.tsx"
+      },
       shared: {
         ...deps,
         react: {
@@ -67,7 +69,7 @@ module.exports = {
       },
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
     }),
   ],
 };

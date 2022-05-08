@@ -7,11 +7,11 @@ body {
 }
 
 .app {
-    padding: 100px;
+    padding: 30px;
 }
 
 .homePage {
-    margin: 100px;
+    border: 1px solid #000;
 }
 
 @import './colors.css'
