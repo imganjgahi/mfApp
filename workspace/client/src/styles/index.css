@@ -14,4 +14,8 @@ body {
     margin: 100px;
 }
 
+.slPage { 
+    color: palevioletred;
+}
+
 @import './colors.css'

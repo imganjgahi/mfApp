@@ -14,4 +14,8 @@ body {
     border: 1px solid #000;
 }
 
+.adPage { 
+    color: palevioletred;
+}
+
 @import './colors.css'

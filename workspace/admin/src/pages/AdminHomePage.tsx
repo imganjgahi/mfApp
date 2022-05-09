@@ -4,7 +4,7 @@ import { ClientHomePage } from "client/ClientHomePage";
 export function AdminHomePage() {
   return (
     <div>
-      <h1>Admin Home Page is Active!</h1>
+      <h1 className='adPage'>Admin Home Page is Active!</h1>
       <ClientHomePage />
     </div>
   )

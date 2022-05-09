@@ -13,7 +13,7 @@ function AboutPage() {
         <p> Conuter: {controller.counter} </p>
         <Button type='primary' onClick={() => controller.setCounter(controller.counter + 1)} >UP</Button>
       </div>
-      <ClientAboutPage />
+      <ClientAboutPage parrent={"admin"}  />
     </>
   )
 }

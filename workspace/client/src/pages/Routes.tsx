@@ -7,7 +7,7 @@ function Routes() {
   return (
       <BrowserRouter>
       <DomRoutes>
-          <Route path='/about' element={<ClientAboutPage />} />
+          <Route path='/about' element={<ClientAboutPage parrent={"client"} />} />
           <Route path='/' element={<ClientHomePage />} />
       </DomRoutes>
       </BrowserRouter>
